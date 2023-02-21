@@ -27,8 +27,7 @@ class _UiState extends State<Ui> {
         // the App.build method, and use it to set our appbar title.
         title: Text('Home'),
       ),
-      body:Center(
-        child: FutureBuilder<Model>(
+      body: FutureBuilder<Model>(
           future:model,
           builder: (context, snapshot) {
             return Scrollbar(
@@ -43,7 +42,6 @@ class _UiState extends State<Ui> {
               ),
             );
           }
-    ),
     ),
     );
   }
